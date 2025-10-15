@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    namespace 'AI.summarization.program'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "AI.summarization.program"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation(group: 'androidx.core', name: 'core-ktx', version: '1.9.0')
+    implementation(group: 'androidx.appcompat', name: 'appcompat', version: '1.6.1')
+    implementation(group: 'com.google.android.material', name: 'material', version: '1.9.0')
+    implementation(group: 'androidx.constraintlayout', name: 'constraintlayout', version: '2.1.4')
+}
