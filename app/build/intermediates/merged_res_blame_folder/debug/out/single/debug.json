@@ -1,6 +1,90 @@
 [
     {
-        "merged": "AI.summarization.program.app-merged_res-28:/layout_activity_main.xml.flat",
-        "source": "AI.summarization.program.app-main-30:/layout/activity_main.xml"
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/anim_slide_out_down.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/anim/slide_out_down.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/layout_activity_main.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/anim_slide_in_down.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/anim/slide_in_down.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_ic_file_24.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/ic_file_24.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/layout_custom_alert_dialog.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/layout/custom_alert_dialog.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_ic_file_upload_24.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/ic_file_upload_24.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_ic_menu_24.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/ic_menu_24.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_ic_mic_24.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/ic_mic_24.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/anim_side_in_down.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/anim/side_in_down.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_ic_play_24.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/ic_play_24.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_ic_send_24.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/ic_send_24.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_ic_pause_24.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/ic_pause_24.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/layout_nav_header.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/layout/nav_header.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/anim_slide_out_up.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/anim/slide_out_up.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/anim_side_out_up.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/anim/side_out_up.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/anim_slide_in_up.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/anim/slide_in_up.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_ic_delete_24.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/ic_delete_24.xml"
+    },
+    {
+        "merged": "AI.summarization.program.app-merged_res-31:/layout_custom_alert_dialog.xml.flat",
+        "source": "AI.summarization.program.app-main-33:/layout/custom_alert_dialog.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_ic_stop_24.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/ic_stop_24.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/menu_nav_menu.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/menu/nav_menu.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_rounded_corner_background.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/rounded_corner_background.xml"
+    },
+    {
+        "merged": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-merged_res-31:/drawable_rounded_dialog_background.xml.flat",
+        "source": "/home/Alexander/.gradle/daemon/8.0.2/AI.summarization.program.app-main-33:/drawable/rounded_dialog_background.xml"
     }
 ]

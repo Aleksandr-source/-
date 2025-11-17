@@ -1,22 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="AI.summarization.program.MainActivity">
+    tools:openDrawer="start">
 
-    <TextView
-        android:id="@+id/welcome_text"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_menu_24"
+            app:title="AI Summarization" />
+
+        <EditText
+            android:id="@+id/input_text_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите или начните запись..."
+            android:padding="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+        <ScrollView
+            android:id="@+id/output_scroll_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_corner_background"
+            app:layout_constraintBottom_toTopOf="@id/process_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_text_field">
+
+            <TextView
+                android:id="@+id/output_text_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начните запись или нажмите кнопку Обработать, чтобы увидеть результат ИИ."
+                android:textColor="?attr/colorOnPrimaryContainer"
+                android:textSize="16sp" />
+
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/process_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Обработать и суммировать"
+            app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            android:max="100"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/reverse_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reverse_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Раскрыть тему (Реверс)"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/audio_input_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        
+        <LinearLayout
+            android:id="@+id/audio_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/record_button"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                android:layout_width="72dp"      
+                android:layout_height="72dp"     
+                android:contentDescription="Запись голоса"
+                app:icon="@drawable/ic_mic_24"
+                app:iconSize="32dp" 
+                android:layout_marginEnd="16dp" 
+                android:layout_marginStart="16dp" 
+                app:iconGravity="textStart"       
+                app:iconPadding="0dp"             
+                android:padding="0dp"             
+                android:insetLeft="0dp"          
+                android:insetRight="0dp"          
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:visibility="visible" 
+                android:focusable="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/select_file_button"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                android:layout_width="72dp" 
+                android:layout_height="72dp"
+                android:contentDescription="Выбрать аудио файл"
+                app:icon="@drawable/ic_file_24"
+                app:iconSize="32dp"
+                android:visibility="gone" 
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                android:padding="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:focusable="false" />
+
+                <LinearLayout
+                    android:id="@+id/recording_controls_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/delete_recording_button"
+                        style="@style/Widget.Material3.Button.IconButton.Filled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:icon="@drawable/ic_delete_24"
+                        android:contentDescription="Удалить запись"
+                        android:layout_marginEnd="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/pause_resume_button"
+                        style="@style/Widget.Material3.Button.IconButton.Filled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:icon="@drawable/ic_pause_24"
+                        android:contentDescription="Пауза/Продолжить запись"
+                        android:layout_marginEnd="16dp" />
+                    
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/send_recording_button"
+                        style="@style/Widget.Material3.Button.IconButton.Filled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:icon="@drawable/ic_send_24"
+                        android:contentDescription="Отправить на обработку" />
+                
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Успешное начало: AI Summarizer!"
-        android:textSize="24sp"
-        android:padding="20dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

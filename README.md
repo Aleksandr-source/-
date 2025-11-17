@@ -1,2 +1,2 @@
 # -
-Программа для Android
+Программа для Android - AISummarizerDemo!

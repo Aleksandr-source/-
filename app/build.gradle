@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'AI.summarization.program'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "AI.summarization.program"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -27,6 +27,6 @@ android {
 dependencies {
     implementation(group: 'androidx.core', name: 'core-ktx', version: '1.9.0')
     implementation(group: 'androidx.appcompat', name: 'appcompat', version: '1.6.1')
-    implementation(group: 'com.google.android.material', name: 'material', version: '1.9.0')
+    implementation(group: 'com.google.android.material', name: 'material', version: '1.10.0')
     implementation(group: 'androidx.constraintlayout', name: 'constraintlayout', version: '2.1.4')
 }

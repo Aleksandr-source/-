@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "AI.summarization.program.app-mergeDebugResources-26:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "AI.summarization.program.app-mergeDebugResources-29:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/home/Alexander/.gradle/caches/transforms-3/2d92249e577489e440537ac2b868a5a6/transformed/appcompat-1.6.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/Alexander/.gradle/caches/transforms-3/a649deab26e1c02873a02e4076a8d3e2/transformed/material-1.9.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/Alexander/.gradle/caches/transforms-3/bc3a46b0c039769e03865eeb5b5d4d47/transformed/material-1.10.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

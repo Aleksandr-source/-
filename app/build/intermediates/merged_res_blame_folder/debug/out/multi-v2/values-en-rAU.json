@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "AI.summarization.program.app-mergeDebugResources-26:/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "AI.summarization.program.app-mergeDebugResources-29:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "/home/Alexander/.gradle/caches/transforms-3/4ce5805462e0fd170142be2b9b2cce09/transformed/core-1.9.0/res/values-en-rAU/values-en-rAU.xml",

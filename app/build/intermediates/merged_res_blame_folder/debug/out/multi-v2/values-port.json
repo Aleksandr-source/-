@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "AI.summarization.program.app-mergeDebugResources-26:/values-port/values-port.xml",
+            "outputFile": "AI.summarization.program.app-mergeDebugResources-29:/values-port/values-port.xml",
             "map": [
                 {
                     "source": "/home/Alexander/.gradle/caches/transforms-3/2d92249e577489e440537ac2b868a5a6/transformed/appcompat-1.6.1/res/values-port/values-port.xml",

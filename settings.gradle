@@ -1,7 +1,7 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        google() // <-- ДОБАВЛЕНО: Репозиторий для плагинов Android
+        google() // Добавлен репозиторий для плагинов Android
         mavenCentral()
     }
 }
